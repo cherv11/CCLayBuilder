@@ -17,7 +17,7 @@ Python (pygame) + Lua Script for building with ComputerCraft
 
 ## Other
 ### Useful links
-[Minecraft block ids](https://minecraft-ids.grahamedgecombe.com)
+[Minecraft block ids](https://minecraftitemids.com/)
 
 ### Controls in English:  
  Change layer: **[A][D]**  
