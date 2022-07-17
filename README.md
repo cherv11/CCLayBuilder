@@ -1,7 +1,7 @@
 # CCLayBuilder
 Python (pygame) + Lua Script for building with ComputerCraft
 
-## Using
+## How to use
 - Run **laybuilder.py**. Configure the size, the components (minecraft block ids) and the name of the file. Then build what you want, layer by layer:  
  ![image](https://user-images.githubusercontent.com/56085790/179429266-696e398c-fdb7-418c-b00a-5b03757c1d26.png)
 - Save it with [B] button and checkout the **.lua** file.
