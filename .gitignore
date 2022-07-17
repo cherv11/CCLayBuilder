@@ -1,9 +1,7 @@
 *.npy
-!examples/*.npy
 *.txt
-!requirements.txt
-!examples/*.txt
 *.lua
+!requirements.txt
 !code.lua
-!examples/*.lua
+!examples/*
 pastebin*
