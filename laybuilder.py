@@ -26,7 +26,7 @@ COLORS = [WHITE, RASPBERRY, RED, YELLOW, YELLANGE, ORANGE, LIGHT_GREEN, GREEN, T
 
 FULL_WINDOW = 1920, 1080
 FPS = 60
-filename = 'test5'
+filename = 'test'
 INTERFACE_CORDS = FULL_WINDOW[0] - 760, 100
 GAP_BTW_LINES = 42
 MAP_SIZE = [20, 20, 20]  # Y, Z, X
@@ -161,7 +161,8 @@ def save():
     file.write(str(data))
     file.close()
     file = open(filename+'.lua', 'w', encoding='utf-8')
-    tilemap_array, y, z, x = cut_flip_rotate()
+    tilemap_array, y, x, z = cut_flip_rotate()
+    file.write("--[[\n  This code was created automatically using CClayBuilder:\n    https://github.com/cherv11/CCLayBuilder\n--]]\n")
     file.write('\n'.join([f'y = {y}', f'z = {z}', f'x = {x}',
                           'data = '+str(tilemap_array).replace('[', '{').replace(']', '}'),
                           'blocks = '+str([d[4] for d in text_fields[4:]]).replace('[', '{').replace(']', '}')]))
@@ -258,13 +259,16 @@ while True:
 
     for i in range(MAP_SIZE[1]):
         for j in range(MAP_SIZE[2]):
-            if tilemap[cl][i][j]:
-                pygame.draw.rect(sc, COLORS[tilemap[cl][i][j]-1], (j*TILE_SIZE+1, MAP_Y_OFFSET+i*TILE_SIZE+1, TILE_SIZE-1, TILE_SIZE-1))
             if ghost and cl > 0 and tilemap[cl-1][i][j]:
                 pygame.draw.rect(sc_ghost, COLORS[tilemap[cl-1][i][j] - 1], (j * TILE_SIZE + 1, MAP_Y_OFFSET+i * TILE_SIZE + 1, TILE_SIZE - 1, TILE_SIZE - 1))
     if ghost and cl > 0:
         sc_ghost.set_alpha(128)
         sc.blit(sc_ghost, (0, 0))
+
+    for i in range(MAP_SIZE[1]):
+        for j in range(MAP_SIZE[2]):
+            if tilemap[cl][i][j]:
+                pygame.draw.rect(sc, COLORS[tilemap[cl][i][j]-1], (j*TILE_SIZE+1, MAP_Y_OFFSET+i*TILE_SIZE+1, TILE_SIZE-1, TILE_SIZE-1))
 
     if interface:
         sc.blit(font.render(str(tpos), True, WHITE), (FULL_WINDOW[0] - 160, 10))

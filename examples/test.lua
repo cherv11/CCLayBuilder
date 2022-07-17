@@ -1,3 +1,7 @@
+--[[
+  This code was created automatically using CClayBuilder:
+    https://github.com/cherv11/CCLayBuilder
+--]]
 y = 10
 z = 5
 x = 5
