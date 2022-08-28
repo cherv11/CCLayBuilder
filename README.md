@@ -8,7 +8,7 @@ Python (pygame) + Lua Script for building with ComputerCraft
 - Copy the contents of .lua file to **pastebin.com** creating new paste. Remember the code of the paste (it looks like **XxXxXxX**).
 - Place your CC Turtle to the world like it placed on the screen (the program automatically deletes all empty lines):
  ![image](https://user-images.githubusercontent.com/56085790/179428939-a75838a9-45f2-4fd0-8f8e-b624ae680517.png)
-- Put coal (or another fuel, but you will have to change the **fuelMoves** variable according to [this API doc](https://www.computercraft.info/wiki/Turtle.refuel)) to slot 1, and other items to any other slots. Use the **pastebin run XxXxXxX** command in your ComputerCraft turtle to build:
+- Put coal (or another fuel, but you will have to change the **fuelMoves** variable according to [this API doc](https://www.computercraft.info/wiki/Turtle.refuel)) to slot 1, and other items to any other slots. Use the **pastebin run XxXxXxX** command in your ComputerCraft turtle to build:  
  ![image](https://user-images.githubusercontent.com/56085790/179428638-8fa20a67-8af6-44a9-a5f0-4e9712563b6e.png)
 - Wait for some time...
 - Enjoy the result! Here is an example from examples/house.lua file in progress:
