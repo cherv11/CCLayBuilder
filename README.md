@@ -1,18 +1,25 @@
 # CCLayBuilder
 Python (pygame) + Lua Script for building with ComputerCraft
 
-## Using
+## How to use
 - Run **laybuilder.py**. Configure the size, the components (minecraft block ids) and the name of the file. Then build what you want, layer by layer:  
- ![image](https://user-images.githubusercontent.com/56085790/179425457-9ec1ef68-a518-4b2c-a9bb-337c844d51c5.png)  
+ ![image](https://user-images.githubusercontent.com/56085790/179429266-696e398c-fdb7-418c-b00a-5b03757c1d26.png)
 - Save it with [B] button and checkout the **.lua** file.
-- Copy the contents of .lua file to **pastebin.com** creating new paste.
-- Use the **pastebin run XxXxXxX** command in your ComputerCraft turtle to build what you want. Put coal (or another fuel, but you will have to change the **fuelMoves** variable according to [this API doc](https://www.computercraft.info/wiki/Turtle.refuel)) to slot 1, and other items to any other slots.
-- Enjoy the result! Here is an example from examples/test.lua file:
- ![image](https://user-images.githubusercontent.com/56085790/179426415-ce0a1a7e-8f64-4577-987e-d67b05a3aecd.png)
+- Copy the contents of .lua file to **pastebin.com** creating new paste. Remember the code of the paste (looks like **XxXxXxX**).
+- Place your CC Turtle to the world like it placed on the screen (the program automatically deletes all empty lines):
+ ![image](https://user-images.githubusercontent.com/56085790/179428939-a75838a9-45f2-4fd0-8f8e-b624ae680517.png)
+- Put coal (you can use any fuel, but you will need to change the **fuelMoves** variable according to [this API doc](https://www.computercraft.info/wiki/Turtle.refuel)) to slot 1, and other items to any other slots. Use the **pastebin run XxXxXxX** command in your ComputerCraft turtle to build:  
+ ![image](https://user-images.githubusercontent.com/56085790/179428638-8fa20a67-8af6-44a9-a5f0-4e9712563b6e.png)
+- Wait for some time...
+- Enjoy the result! Here is an example from examples/house.lua file in progress:
+ ![image](https://user-images.githubusercontent.com/56085790/179429577-a4498236-3275-4481-9e34-5097fd9f34ca.png)
 
 
 ## Other
-### Here are the controls in English:  
+### Useful links
+[Minecraft ID list](https://minecraftitemids.com/)
+
+### Controls in English:  
  Change layer: **[A][D]**  
  Change color: **[Q][E]**  
  Draw: **[LMB]**  
